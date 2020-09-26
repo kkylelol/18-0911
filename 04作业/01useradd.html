@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <style>
+        .txt{
+            text-align: right;
+        }
+        .tab tr td{
+            width: 150px;
+
+        }
+        .tab{
+            border: 1px black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+<!--点击保存，跳转到用户列表页面-->
+<form action="#" method="post">
+    <table class="tab" border="1px" >
+        <p>用户注册</p>
+        <tr>
+            <td class="txt">姓名：</td>
+            <td class="sold" colspan="3"><input type="text" minlength="2" maxlength="10"></td>
+<!--            <td></td>-->
+<!--            <td></td>-->
+        </tr>
+        <tr>
+            <td class="txt">性别：</td>
+            <td><input  type="radio" name="sex">男<input type="radio" name="sex">女</td>
+            <td class="txt">年龄：</td>
+            <td><input type="text" name="age"></td>
+        </tr>
+        <tr>
+            <td class="txt">班级：</td>
+            <td><select name="banji">
+                <option value="1801">软件1801</option>
+                <option value="1802">软件1802</option>
+                <option value="1803">软件1803</option>
+                <option value="1804">软件1804</option>
+                <option value="1805">软件1805</option>
+                <option value="1806">软件1806</option>
+                <option value="1807">软件1807</option>
+            </select></td>
+            <td class="txt">学号：</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td class="txt">邮箱：</td>
+            <td><input type="email"></td>
+            <td class="txt">电话：</td>
+            <td><input type="tel"></td>
+        </tr>
+        <tr>
+            <td class="txt">籍贯：</td>
+            <td class="sold" colspan="3"><select name="jiguan">
+                <option value="hebei">河北</option>
+                <option value="beijing">北京</option>
+                <option value="shandong">山东</option>
+                <option value="yunnan">云南</option>
+                <option value="heilongjiang">黑龙江</option>
+                <option value="shanxi">陕西</option>
+                <option value="xizang">西藏</option>
+                <option value="gansu">甘肃</option>
+                <option value="hunan">湖南</option>
+            </select></td>
+<!--            <td></td>-->
+<!--            <td></td>-->
+        </tr>
+        <tr>
+            <td class="txt">家庭住址：</td>
+            <td class="sold" colspan="3"><input type="text" minlength="8"></td>
+<!--            <td></td>-->
+<!--            <td></td>-->
+        </tr>
+        <tr>
+            <td class="txt">主修课程：</td>
+            <td class="sold" colspan="3"><textarea cols="50" rows="5"></textarea></td>
+<!--            <td></td>-->
+<!--            <td></td>-->
+        </tr>
+        <tr>
+            <td class="txt">社会实践/项目时间：</td>
+            <td class="sold" colspan="3"><textarea cols="50" rows="5"></textarea></td>
+<!--            <td></td>-->
+<!--            <td></td>-->
+        </tr>
+        <tr>
+            <td class="txt">荣誉奖励：</td>
+            <td class="sold" colspan="3"><textarea cols="50" rows="5"></textarea></td>
+<!--            <td></td>-->
+<!--            <td></td>-->
+        </tr>
+        <tr>
+            <td class="txt">技能证书：</td>
+            <td class="sold" colspan="3"><textarea cols="50" rows="5"></textarea></td>
+<!--            <td></td>-->
+<!--            <td></td>-->
+        </tr>
+        <tr>
+            <td class="txt">自我评价：</td>
+            <td class="sold" colspan="3"><textarea cols="50" rows="5"></textarea></td>
+<!--            <td></td>-->
+<!--            <td></td>-->
+        </tr>
+        <td colspan="4" align="center">
+            <input type="submit" value="注册">
+            <input type="reset" value="重置">
+            <input type="button" value="取消">
+        </td>
+    </table>
+</form>
+</body>
+</html>
