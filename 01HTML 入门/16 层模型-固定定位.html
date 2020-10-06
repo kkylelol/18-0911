@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>固定定位</title>
+    <style>
+        p{
+            background-color: aqua;
+            border: burlywood;
+            padding: 5px;
+            margin: 10px;
+        }
+        span{
+            background-color: #ff7f7a;
+            border: 3px solid black;
+        }
+        .position{
+            width: 500px;
+            height: 100px;
+            position: fixed;/*确定固定定位*/
+            background-color: #fff2a0;
+            top: 30px;
+            left: 30px;
+        }
+        .position2{
+            width: 500px;
+            height: 100px;
+            position: fixed;/*确定固定定位*/
+            background-color: #fea2ff;
+            top: 40px;
+            left: 40px;
+            /*z-index: 1;!*控制层块在垂直于屏幕方向的位置*!*/
+        }
+        .position3{
+            width: 500px;
+            height: 100px;
+            position: fixed;/*确定固定定位*/
+            background-color: #c5ffde;
+            top: 50px;
+            left: 50px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+<p class="position">段（拼音：duàn）是汉语通用规范一级汉字（常用字）。此字始见于西周金文。</p>
+<p class="position2">段（拼音：duàn）是汉语通用规范一级汉字（常用字）。此字始见于西周金文。</p>
+<p class="position3">段（拼音：duàn）是汉语通用规范一级汉字（常用字）。此字始见于西周金文。</p>
+</body>
+</html>

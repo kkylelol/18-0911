@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>相对定位</title>
+    <style>
+        body{
+            width: 600px;
+            margin: 0 auto;
+        }
+        p{
+            background-color: aqua;
+            border: burlywood;
+            padding: 5px;
+            margin: 10px;
+        }
+        span{
+            background-color: #ff7f7a;
+            border: 3px solid black;
+        }
+        .position{
+            background-color: #fff2a0;
+            position: relative;/*确定相对定位*/
+            top: 30px;
+            left: 30px;
+        }
+    </style>
+</head>
+<body>
+<p>段（拼音：duàn）是汉语通用规范一级汉字（常用字）。此字始见于西周金文</p>
+<p class="position">段（拼音：duàn）是汉语通用规范一级汉字（常用字）。此字始见于西周金文</p>
+<p>段（拼音：duàn）是汉语通用规范一级汉字（常用字）。此字始见于西周金文</p>
+<p class="position">其古字形一般认为像手持锤敲打山崖上的石头，<span>本义指敲击、锤打，是“锻”的初文。</span>段常用于指事物、时间的一个部分，还指工矿企业中的一级行政单位。</p>
+</body>
+</html>
