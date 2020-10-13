@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>String对象</title>
+</head>
+<body>
+<script>
+    //定义
+    let str1 = 'javaScript常用内置对象';
+    let str2 = new String('内置对象');
+    //length属性
+    console.log(str1.length);
+    console.log(str2.length);
+    //字母大小写转换
+    console.log(str1.toUpperCase());
+    console.log(str1.toLowerCase());
+    //指定字符属性
+    console.log(str1.charAt(12));
+    console.log(str1.indexOf('aS',0));//查询指定字符所在位置
+    //截取字符串
+    console.log(str1.substring(5,13));
+    console.log(str1.substr(5,13));
+    //替换字符串
+    console.log(str1.replace("aScr","python"));
+    //拆分字符串
+    let str3 = "sdfasdf,jlaks,dfanj,vuf,na";
+    let a1 = str3.split(",");
+    console.log(a1);
+</script>
+</body>
+</html>
