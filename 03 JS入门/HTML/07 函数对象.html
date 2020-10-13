@@ -7,7 +7,11 @@
 <body>
 <script>
     //普通函数
-    
+    function sum() {
+       return a+b;
+    }
+    //以对象的形式声明一个函数
+    let sum1 = new Function ("a","b","return a+b");//注意F/f大小写区分
 </script>
 </body>
 </html>
