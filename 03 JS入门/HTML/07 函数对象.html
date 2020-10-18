@@ -12,6 +12,38 @@
     }
     //以对象的形式声明一个函数
     let sum1 = new Function ("a","b","return a+b");//注意F/f大小写区分
+
+    //箭头函数
+    //简单 : 函数体只有一条语句；
+    let aa = x => x*x;
+
+    y =  aa(2);
+
+    //函数体有多个执行加语句
+    let a2 = x2 =>{
+        if (x>0){
+            return x*x;
+        }else {
+            return -x*x;
+        }
+    }
+    n = a2(3);
+
+    //多参数
+    let a3 = (x,y) =>{
+        return x*x - y*y;
+    }
+    let y3 = a3(5,6);
+    console.log(y3);
+    //无参数
+    let a4 = () =>{
+        console.log("无参箭头函数");
+    }
+    //可变参数（无固定参数）
+    let a5 = (x,y,...rest) =>{
+          let sum = x+y;
+
+    }
 </script>
 </body>
 </html>
