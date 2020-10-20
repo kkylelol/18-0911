@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>改变HTML内容</title>
+</head>
+<body>
+<p id="p1">hello woeld!</p>
+
+<h1 id="header">old age</h1>
+
+<input type="button" value="改变内容" onclick="changeHtml()">
+
+<script>
+    function changeHtml() {
+        let ob1 = document.getElementById("p1");
+            ob1.innerText = "你好，世界！";
+        let ob2 = document.getElementById("header");
+            ob2.innerHTML = "<a href='www.baidu.com'>跳转百度</a>";
+            // ob2.innerText = "<a href='www.baidu.com'>跳转百度</a>";
+    }
+</script>
+
+
+
+
+
+</body>
+</html>

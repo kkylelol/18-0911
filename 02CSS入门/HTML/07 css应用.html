@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>url链接样式化为按钮</title>
+    <style>
+        ul{
+
+            width: 100%;
+            height: 30px;
+            margin: 10px;
+            padding: 5px;
+            white-space: nowrap;
+        }
+        li{
+           display: inline;
+        }
+        a{
+            outline: none;
+            text-decoration: none;/*下划线*/
+        }
+        a:link{/*未点击时*/
+
+            background: chocolate;
+        }
+        a:hover{/*鼠标处于连接上时*/
+            background-color: coral;
+        }
+        a:active{/*点击的那一刻*/
+            background-color: #c5ffde;
+        }
+        a:visited{/*点击后*/
+            background-color: deeppink;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li><a href="#">首页</a></li>
+    <li><a href="#">电影</a></li>
+    <li><a href="#">动漫</a></li>
+    <li><a href="#">综艺</a></li>
+    <li><a href="#">纪录片</a></li>
+</ul>
+</body>
+</html>

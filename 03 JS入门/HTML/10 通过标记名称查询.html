@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>通过标记名称查询</title>
+</head>
+<body>
+<div><p>aaaaaaaaaa</p></div>
+<p>bbbbbbbbbb</p>
+<span>cccccccccc</span>
+<input type="text">
+<input type="button" value="通过标记查询元素" onclick="selectHtml()">
+
+<script>
+    function selectHtml() {
+        let obj1 = document.getElementsByTagName("div");
+        console.log("obj1="+obj1[0].innerText);//返回标签内的纯文本内容
+        console.log("obj1="+obj1[0].innerHTML);//返回标签内的所有内容
+        let obj2 = document.getElementsByTagName("p");
+        console.log("obj2="+obj2[1].innerText);
+        console.log("obj2="+obj2[1].innerHTML);
+        let obj3 = document.getElementsByTagName("span");
+        console.log("obj3="+obj3[0].innerText);
+        let obj4 = document.getElementsByTagName("input");
+        console.log("obj4="+obj4[1].innerText);
+    }
+
+</script>
+</body>
+</html>

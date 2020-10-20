@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>通过query查询</title>
+</head>
+<body>
+<div>
+    <p>aaaaaaaa</p>
+    <p>bbbbbb</p>
+    <p>ccccccc</p>
+    <p>ddddddddd</p>
+</div>
+<input type="button" value="通过query查询" onclick="querySelect()">
+
+<script>
+    document.write("lalalalalalalalalala");
+
+    function querySelect() {
+        let obj1 = document.querySelector("p");
+        console.log("obj1 = "+obj1.innerHTML);
+        let obj2 = document.querySelectorAll("p");
+        console.log("obj2 = "+obj2.length);
+        for (let i = 0;i<=obj2.length;i++){
+            console.log("obj2 = " + obj2[i]);
+        }
+
+    }
+</script>
+</body>
+</html>

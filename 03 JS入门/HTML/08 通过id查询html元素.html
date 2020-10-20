@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>通过id查询元素</title>
+</head>
+<body>
+<input type="text" id="username" value="" onblur="selectID()">
+<input type="button" value="保存" onclick="getonclick()">
+
+<div id="div1"> 这是一段文本</div>
+
+<script>
+    function selectID() {
+        let  username = document.getElementById("username").value;
+        console.log(username);
+    }
+    function getonclick() {
+        let  divtext = document.getElementById("div1").innerText;
+        console.log(divtext);
+    }
+</script>
+</body>
+</html>

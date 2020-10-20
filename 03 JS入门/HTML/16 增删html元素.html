@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>增删html元素</title>
+</head>
+<body>
+
+<div id="div1" align="center">
+    <p>aaaaaaaaaa</p>
+</div>
+<div id="div2" align="center">
+    <input type="button" value="增加段落" onclick="addline()">
+    <input type="button" value="删除段落" onclick="delline()">
+</div>
+
+
+<script>
+    function addline() {
+        let op1 = document.getElementById("div1");
+        let newp = document.createElement("p");//创建子节点
+        let newptext = document.createTextNode("bbbbbbbbbbbbbb");//输入子节点的值
+        op1.appendChild(newp);
+    }
+    function delline() {
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>改变html样式</title>
+</head>
+<body>
+<p>
+    <span id="sp1" style="color: #c5ffde">你好</span>
+    <span id="sp2" style="color: #fff2a0">world!</span>
+</p>
+<input type="button" value="改变样式" onclick="changeCss()">
+
+<script>
+    function changeCss() {
+       let op1 = document.getElementById("sp1");
+       op1.style.color = "red";
+       op1.style.fontSize = "24px";
+       let op2 = document.getElementById("sp2");
+       op2.style.color = "blue";
+    }
+</script>
+</body>
+</html>
