@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>课程添加</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JS/js-style.js"></script>
+</head>
+<body>
+<form id="courseadd" method="post" action="courseinfo-1.html">
+<div class="weblist">
+    <div class="header">
+        <img src="../../img/logo.jpg">
+        <img src="../../img/xylogonew.png" class="header-img">
+    </div>
+    <div class="navigation"><p>左导航栏</p></div>
+    <div id="main" class="mainbody">
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;课程注册
+        <hr>
+        <table class="mytab">
+            <tr>
+                <td class="txttd">课程名称：</td>
+                <td colspan="3"><input id="classname" type="text"></td>
+            </tr>
+            <tr>
+                <td class="txttd">课程编号：</td>
+                <td colspan="3"><input id="classnumber" type="text"></td>
+            </tr>
+            <tr>
+                <td class="txttd">课程结构：</td>
+                <td  colspan="3">
+                         <input id="kemu1" class="kemu-jiegou" name="kemu-major" type="radio" value="通识必修">通识必修
+                         <input id="kemu2" class="kemu-jiegou" name="kemu-major" type="radio" value="通识选修">通识选修
+                         <input id="kemu3" class="kemu-jiegou" name="kemu-major" type="radio" value="学科基础">学科基础
+                         <input id="kemu4" class="kemu-jiegou" name="kemu-major" type="radio" value="专业必修">专业必修
+                         <input id="kemu5" class="kemu-jiegou" name="kemu-major" type="radio" value="专业选修">专业选修
+                </td>
+
+            </tr>
+            <tr>
+                <td class="txttd">学时：</td>
+                <td><input id="hours" type="text">
+                </td>
+                <td class="txttd">学分：</td>
+                <td><input id="credits" type="text"></td>
+            </tr>
+            <tr>
+                <td class="txttd">适用专业：</td>
+                <td colspan="3">
+                    <select id="major-list">
+                        <option value="1">软件工程</option>
+                        <option value="2">计算机科学与技术</option>
+                        <option value="3">数据结构与大数据技术</option>
+                        <option value="4">物联网</option>
+                        <option value="5">电子商务</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="txttd">考核方式：</td>
+                <td colspan="3">
+                    <input id="assess1" class="kaoshi" name="kaoshimoshi" type="radio" value="考试">考试
+                    <input id="assess2"  class="kaoshi" name="kaoshimoshi" type="radio" value="考察">考察
+                    <input id="assess3"  class="kaoshi" name="kaoshimoshi" type="radio" value="实践">实践
+                </td>
+            </tr>
+            <tr>
+                <td class="txttd">课程简介：</td>
+                <td colspan="3"><textarea id="classkey" rows="8" cols="50"></textarea></td>
+            </tr>
+        </table>
+        <br>
+        <div  class="btn-div">
+            <input type="button" value="注册" onclick="getclassname(),
+                                                       getclassnumber(),
+                                                       getclassstructural(),
+                                                       gethours(),
+                                                       getcredits(),
+                                                       getmajor(),
+                                                       getassessstyle(),
+                                                       getclasskey()">
+            <input type="button" value="重置" onclick="clear()">
+            <input type="button" value="取消" onclick="backcouserlist()">
+            <input type="submit" value="提交">
+        </div>
+    </div>
+    <div class="foot">页脚</div>
+</div>
+</form>
+</body>
+</html>

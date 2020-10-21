@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动态增删表格行</title>
+</head>
+<body>
+
+    <table id="mytab"
+           width="50%"
+           align="center"
+           cellspacing="0"
+           cellpadding="5"
+           border="1"    >
+        <tr>
+            <td>序号</td>
+            <td>姓名</td>
+            <td>学号</td>
+        </tr>
+    </table>
+    <br>
+<div align="center">
+    <input type="button" value="添加行" onclick="addtr()">
+    <input type="button" value="删除行" onclick="deltr()">
+</div>
+<script>
+    function addtr() {
+      let mytab = document.getElementById("mytab");//获取id
+      let tablength = mytab.rows.length;//获取表格宽度
+      let row = mytab.insertRow(tablength);//获取表格下标
+      let cell1 = row.insertCell(0); //按下标添加内容
+      cell1.innerHTML = tablength;
+
+      let  cell2 = row.insertCell(1);
+      cell2.innerHTML = "张三"+tablength;
+
+      let  cell3 = row.insertCell(2);
+        cell3.innerHTML = "<input type='button' value='修改' onclick='edit("+tablength+")'>"
+                        + "<input type='button' value='删除' onclick='delnowtr("+tablength+")'>"
+                          ;
+    }
+    function edit() {
+       alert("tablength");
+    }
+    function deltr() {
+        let mytab = document.getElementById("mytab");//获取id
+        let tablength = mytab.rows.length;//获取表格宽度
+
+        if (tablength>1){
+            mytab.deleteRow(tablength-1);//如果表格长度大于1，则减去1个长度
+        }
+    }
+    // //作业：删除当前行
+    // function delnowtr() {
+    //     let mytab = document.getElementById("mytab");//获取id
+    //     let tablelength = mytab.rows.length;
+    //
+    //     mytab.deleteRow();
+    // }
+</script>
+
+</body>
+</html>

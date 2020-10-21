@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户列表</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JS/js-style.js"></script>
+</head>
+<body>
+<form id="courselist" method="post">
+<div class="weblist">
+    <div class="header">
+        <img src="../../img/logo.jpg">
+        <img src="../../img/xylogonew.png" class="header-img">
+    </div>
+    <div class="navigation"><p>左导航栏</p></div>
+    <div class="mainbody">
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;课程列表&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="注册" onclick="backcouseradd()">
+        <hr>
+        <table class="mytab txtalign">
+            <tr>
+                <td>序号</td>
+                <td>课程名称</td>
+                <td>课程编号</td>
+                <td>课程结构</td>
+                <td>学时/学分</td>
+                <td>适用专业</td>
+                <td>考核方式</td>
+                <td>操作</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><a onclick="backcouserinfo()" >数据库系统概论</a></td>
+                <td>1112L1018</td>
+                <td>专业必修</td>
+                <td>64/4.0</td>
+                <td>软件工程</td>
+                <td>考试</td>
+                <td>
+                    <input type="button" value="修改" onclick="backcouserupdate()">
+                    <input type="button" value="删除">
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><a onclick="backcouserinfo()" >Web程序设计基础</a></td>
+                <td>1112L1019</td>
+                <td>专业必修</td>
+                <td>48/3.0</td>
+                <td>软件工程</td>
+                <td>考试</td>
+                <td>
+                    <input type="button" value="修改" onclick="backcouserupdate()">
+                    <input type="button" value="删除">
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><a onclick="backcouserinfo()" >专业英语（软件）</a></td>
+                <td>1112L1028</td>
+                <td>专业必修</td>
+                <td>32/2.0</td>
+                <td>软件工程</td>
+                <td>考试</td>
+                <td>
+                    <input type="button" value="修改" onclick="backcouserupdate()">
+                    <input type="button" value="删除">
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><a onclick="backcouserinfo()" >C#程序设计实训</a></td>
+                <td>1113S2005</td>
+                <td>专业选修</td>
+                <td>32/2.0</td>
+                <td>软件工程</td>
+                <td>考试</td>
+                <td>
+                    <input type="button" value="修改" onclick="backcouserupdate()">
+                    <input type="button" value="删除">
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><a onclick="backcouserinfo()" >Linux程序设计</a></td>
+                <td>1113S2006</td>
+                <td>专业选修</td>
+                <td>64/4.0</td>
+                <td>软件工程</td>
+                <td>考试</td>
+                <td>
+                    <input type="button" value="修改" onclick="backcouserupdate()">
+                    <input type="button" value="删除">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="foot">页脚</div>
+</div>
+</form>
+</body>
+</html>
