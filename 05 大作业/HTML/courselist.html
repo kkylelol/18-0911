@@ -10,15 +10,19 @@
 <form id="courselist" method="post">
 <div class="weblist">
     <div class="header">
-        <img src="../../img/logo.jpg">
-        <img src="../../img/xylogonew.png" class="header-img">
+        <img alt="logo" src="../../img/logo.jpg">
+        <img alt="logo" src="../../img/xylogonew.png" class="header-img">
     </div>
-    <div class="navigation"><p>左导航栏</p></div>
+    <div class="navigation"><p></p></div>
     <div class="mainbody">
         <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;课程列表&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="注册" onclick="backcouseradd()">
+        &nbsp;&nbsp;&nbsp;&nbsp;课程列表&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input class="button" type="button" value="注册"
+               onmouseover="this.style.backgroundColor = '#F5B629'"
+               onmouseout="this.style.backgroundColor = '#0066a8'"
+               onclick="backcouseradd()">
         <hr>
-        <table class="mytab txtalign">
+        <table id="tablelist" class="mytab txtalign">
             <tr>
                 <td>序号</td>
                 <td>课程名称</td>
@@ -31,28 +35,40 @@
             </tr>
             <tr>
                 <td>1</td>
-                <td><a onclick="backcouserinfo()" >数据库系统概论</a></td>
+                <td><a >数据库系统概论</a></td>
                 <td>1112L1018</td>
                 <td>专业必修</td>
                 <td>64/4.0</td>
                 <td>软件工程</td>
                 <td>考试</td>
                 <td>
-                    <input type="button" value="修改" onclick="backcouserupdate()">
-                    <input type="button" value="删除">
+                    <input class="button" type="button" value="修改"
+                           onmouseover="this.style.backgroundColor = '#F5B629'"
+                           onmouseout="this.style.backgroundColor = '#0066a8'"
+                           onclick="backcouserupdate()">
+                    <input class="button" type="button" value="删除"
+                           onmouseover="this.style.backgroundColor = '#F5B629'"
+                           onmouseout="this.style.backgroundColor = '#0066a8'"
+                           onclick="delrows(this)">
                 </td>
             </tr>
             <tr>
                 <td>2</td>
-                <td><a onclick="backcouserinfo()" >Web程序设计基础</a></td>
+                <td><a href="courseinfo-1.html" onclick="updata()">Web程序设计基础</a></td>
                 <td>1112L1019</td>
                 <td>专业必修</td>
                 <td>48/3.0</td>
                 <td>软件工程</td>
                 <td>考试</td>
                 <td>
-                    <input type="button" value="修改" onclick="backcouserupdate()">
-                    <input type="button" value="删除">
+                    <input class="button" type="button" value="修改"
+                           onmouseover="this.style.backgroundColor = '#F5B629'"
+                           onmouseout="this.style.backgroundColor = '#0066a8'"
+                           onclick="backcouserupdate()">
+                    <input class="button" type="button" value="删除"
+                           onmouseover="this.style.backgroundColor = '#F5B629'"
+                           onmouseout="this.style.backgroundColor = '#0066a8'"
+                           onclick="delrows(this)">
                 </td>
             </tr>
             <tr>
@@ -64,8 +80,14 @@
                 <td>软件工程</td>
                 <td>考试</td>
                 <td>
-                    <input type="button" value="修改" onclick="backcouserupdate()">
-                    <input type="button" value="删除">
+                    <input class="button" type="button" value="修改"
+                           onmouseover="this.style.backgroundColor = '#F5B629'"
+                           onmouseout="this.style.backgroundColor = '#0066a8'"
+                           onclick="backcouserupdate()">
+                    <input class="button" type="button" value="删除"
+                           onmouseover="this.style.backgroundColor = '#F5B629'"
+                           onmouseout="this.style.backgroundColor = '#0066a8'"
+                           onclick="delrows(this)">
                 </td>
             </tr>
             <tr>
@@ -77,8 +99,14 @@
                 <td>软件工程</td>
                 <td>考试</td>
                 <td>
-                    <input type="button" value="修改" onclick="backcouserupdate()">
-                    <input type="button" value="删除">
+                    <input class="button" type="button" value="修改"
+                           onmouseover="this.style.backgroundColor = '#F5B629'"
+                           onmouseout="this.style.backgroundColor = '#0066a8'"
+                           onclick="backcouserupdate()">
+                    <input class="button" type="button" value="删除"
+                           onmouseover="this.style.backgroundColor = '#F5B629'"
+                           onmouseout="this.style.backgroundColor = '#0066a8'"
+                           onclick="delrows(this)">
                 </td>
             </tr>
             <tr>
@@ -90,13 +118,19 @@
                 <td>软件工程</td>
                 <td>考试</td>
                 <td>
-                    <input type="button" value="修改" onclick="backcouserupdate()">
-                    <input type="button" value="删除">
+                    <input class="button" type="button" value="修改"
+                           onmouseover="this.style.backgroundColor = '#F5B629'"
+                           onmouseout="this.style.backgroundColor = '#0066a8'"
+                           onclick="backcouserupdate()">
+                    <input class="button" type="button" value="删除"
+                           onmouseover="this.style.backgroundColor = '#F5B629'"
+                           onmouseout="this.style.backgroundColor = '#0066a8'"
+                           onclick="delrows(this)">
                 </td>
             </tr>
         </table>
     </div>
-    <div class="foot">页脚</div>
+    <div class="foot"></div>
 </div>
 </form>
 </body>

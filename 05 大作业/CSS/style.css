@@ -1,10 +1,11 @@
-
+/*整个页面*/
 .weblist{
     margin: auto;
     width: 100% ;
     height: 100%;
     background-color: black;
 }
+/*logo*/
 .header{
     height: 135px;
     width: 100%;
@@ -14,22 +15,31 @@
 .header-img{
     margin: 20px;
 }
+/*左导航栏*/
 .navigation{
     height: 800px;
-    width: 21.7%;
+    width: 21.5%;
     float: left;
-    background-color: #6d85ff;
+    background-color: #0066a8;
 }
+/*主体样式*/
 .mainbody{
+    font-size: 22px;
     height: 780px;
-    width: 78.3%;
+    width: 78.5%;
     float: right;
-    background-color: #c5ffde;
+    background-color: white;
 }
-.foot{
+/*页脚*/
+.foot {
     height: auto;
-    background-color: #bfc2c3;
+    background-color: white;
 }
+/*字体靠左*/
+.txttd{
+    text-align: right;
+}
+/*表格样式*/
 .mytab{
     margin-left: 20px;
     width:80%;
@@ -37,15 +47,16 @@
     border:2px solid #bfc2c3;
     border-collapse: collapse;
 }
-.txttd{
-    text-align: right;
-}
 tr td{
+    height: 60px;
     border-collapse: collapse;
     border: 2px solid #bfc2c3;
 }
 tr>td:first-child{
-    width: 10%;
+    width: 12%;
+}
+tr:nth-child(2n){
+    background-color: #d9f0ff;
 }
 .btn-div{
  margin-left: 530px;
@@ -53,9 +64,43 @@ tr>td:first-child{
 .mylittab{
     float: right;
 }
+/*取消超链接下划线*/
 a{
     text-decoration-line: none;
 }
+/**/
+a:link{
+
+}
+/*鼠标移到超链接上时*/
+a:hover{
+    color: #ff7f7a;
+}
+/*列表页面字体居中*/
 .txtalign{
     text-align: center;
+}
+/*按钮样式*/
+.button{
+    color: white;
+    width: 85px;
+    height: 42px;
+    border: 0;
+    border-radius: 6px;
+    font-size: 20px;
+    background-color: #0066a8;
+}
+/*文本框大小*/
+.inputstyle{
+    height: 26px;
+}
+/*下拉框大小*/
+#updatemajor{
+    height: 36px;
+    width: 177px;
+}
+/*适用专业下拉框*/
+#major-list{
+    height: 36px;
+    width: 177px;
 }
